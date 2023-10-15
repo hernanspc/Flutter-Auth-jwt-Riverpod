@@ -17,7 +17,7 @@ Este es un proyecto para trabajar con:
 Recuerden leer y seguir la guía para montar el backend localmente.
 
 <div align="center">
-  <img src="https://github.com/hernanspc/clikclok/blob/main/lib/screenshots/1.png" alt="Screenshot 1" width="300"/>
+  <img src="https://github.com/hernanspc/Flutter-Auth-jwt-Riverpod/blob/main/lib/screenshots/1.png" alt="Screenshot 1" width="300"/>
 
 </div>
 
