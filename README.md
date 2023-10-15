@@ -16,3 +16,8 @@ Este es un proyecto para trabajar con:
 # Importante
 Recuerden leer y seguir la guía para montar el backend localmente.
 
+<div align="center">
+  <img src="https://github.com/hernanspc/clikclok/blob/main/lib/screenshots/1.png" alt="Screenshot 1" width="300"/>
+
+</div>
+
