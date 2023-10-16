@@ -42,10 +42,11 @@ class RegisterScreen extends StatelessWidget {
               ],
             ),
 
-            const SizedBox(height: 50),
+            const SizedBox(height: 50), // Ajustar espacio aquí
 
             Container(
-              height: size.height - 260, // 80 los dos sizebox y 100 el ícono
+              height: size.height - 240, // 80 los dos sizebox y 100 el ícono
+              // height: size.height,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: scaffoldBackgroundColor,
@@ -73,9 +74,9 @@ class _RegisterForm extends ConsumerWidget {
       padding: const EdgeInsets.symmetric(horizontal: 50),
       child: Column(
         children: [
-          const SizedBox(height: 50),
+          const SizedBox(height: 20),
           Text('Nueva cuenta', style: textStyles.titleMedium),
-          const SizedBox(height: 50),
+          const SizedBox(height: 20),
           CustomTextFormField(
             label: 'Nombre completo',
             keyboardType: TextInputType.emailAddress,
@@ -84,7 +85,7 @@ class _RegisterForm extends ConsumerWidget {
                 ? registerForm.fullName.errorMessage
                 : null,
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           CustomTextFormField(
             label: 'Correo',
             keyboardType: TextInputType.emailAddress,
@@ -93,7 +94,7 @@ class _RegisterForm extends ConsumerWidget {
                 ? registerForm.email.errorMessage
                 : null,
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           CustomTextFormField(
             label: 'Contraseña',
             obscureText: true,
@@ -103,7 +104,7 @@ class _RegisterForm extends ConsumerWidget {
                 ? registerForm.password.errorMessage
                 : null,
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           CustomTextFormField(
             label: 'Repita la contraseña',
             obscureText: true,
@@ -113,7 +114,7 @@ class _RegisterForm extends ConsumerWidget {
                 ? registerForm.repeatPassword.errorMessage
                 : null,
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           SizedBox(
               width: double.infinity,
               height: 60,

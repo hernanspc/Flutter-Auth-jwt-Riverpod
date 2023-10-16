@@ -92,7 +92,7 @@ class RegisterFormNotifier extends StateNotifier<RegisterFormState> {
     final newPassword = RepeatPassword.dirty(value);
     state = state.copyWith(
         repeatPassword: newPassword,
-        isValid: Formz.validate([newPassword, state.email]));
+        isValid: Formz.validate([newPassword, state.password]));
   }
 
   onFormSubmit() {
