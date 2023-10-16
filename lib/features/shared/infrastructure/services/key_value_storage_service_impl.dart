@@ -2,7 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'key_value_storage_service.dart';
 
-class KeyVlueStorageServiceImpl extends KeyValueStorageService {
+class KeyValueStorageServiceImpl extends KeyValueStorageService {
   Future<SharedPreferences> getSharedPrefs() async {
     return await SharedPreferences.getInstance();
   }
