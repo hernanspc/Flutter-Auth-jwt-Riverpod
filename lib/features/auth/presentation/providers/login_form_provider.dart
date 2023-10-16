@@ -2,6 +2,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:formz/formz.dart';
 import 'package:teslo_shop/features/shared/shared.dart';
 
+//! State notifier afuera
+final loginFormProvider =
+    StateNotifierProvider.autoDispose<LoginFormNotifier, LoginFormState>((ref) {
+  return LoginFormNotifier();
+});
+
 //! State del provider
 class LoginFormState {
   final bool isPosting;
@@ -49,7 +55,6 @@ class LoginFormState {
 }
 
 //! Como implemetamos un notifier
-
 class LoginFormNotifier extends StateNotifier<LoginFormState> {
   LoginFormNotifier() : super(LoginFormState());
 
@@ -86,9 +91,3 @@ class LoginFormNotifier extends StateNotifier<LoginFormState> {
     );
   }
 }
-
-//! State notifier afuera
-final loginFormProvider =
-    StateNotifierProvider.autoDispose<LoginFormNotifier, LoginFormState>((ref) {
-  return LoginFormNotifier();
-});
