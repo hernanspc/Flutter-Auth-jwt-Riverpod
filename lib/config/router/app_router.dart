@@ -48,7 +48,9 @@ final goRouterProvider = Provider(
         }
 
         if (authStatus == AuthStatus.authenticated) {
-          if (isGoingTo == '/login' || isGoingTo == '/register') return '/';
+          if (isGoingTo == '/login' ||
+              isGoingTo == '/register' ||
+              isGoingTo == '/splash') return '/';
         }
         return null;
       },

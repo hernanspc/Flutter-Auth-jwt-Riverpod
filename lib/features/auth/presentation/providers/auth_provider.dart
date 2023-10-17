@@ -28,7 +28,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
 
   Future<void> loginUser(String email, String password) async {
     await Future.delayed(const Duration(milliseconds: 500));
-    print('auth_provider $email $password');
+
     try {
       final user = await authRepository.login(email, password);
       _setLoggedUser(user);
